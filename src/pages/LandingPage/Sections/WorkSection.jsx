@@ -21,10 +21,7 @@ class WorkSection extends React.Component {
           <GridItem cs={12} sm={12} md={8}>
             <h2 className={classes.title}>Apply Today</h2>
             <h4 className={classes.description}>
-              Divide details about your product or agency work into parts. Write
-              a few lines about each one and contact us about any further
-              collaboration. We will responde get back to you in a couple of
-              hours.
+              Applying is as easy as including your name, your email, and a brief message on why you want to take on this challenge. An email will be sent to you with additional steps in the application process later!
             </h4>
             <form>
               <GridContainer>

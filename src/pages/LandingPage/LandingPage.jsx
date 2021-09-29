@@ -17,7 +17,7 @@ import GridItem from "components/Grid/GridItem.jsx";
 import Button from "components/CustomButtons/Button.jsx";
 import HeaderLinks from "components/Header/HeaderLinks.jsx";
 import Parallax from "components/Parallax/Parallax.jsx";
-
+import {Link} from 'react-scroll'
 import landingPageStyle from "assets/jss/material-kit-react/views/landingPage.jsx";
 
 // Sections for this page
@@ -50,19 +50,16 @@ class LandingPage extends React.Component {
               <GridItem xs={12} sm={12} md={6}>
                 <h1 className={classes.title}>Your Story Starts Here.</h1>
                 <h4>
-                Every journey starts with a single step. TekNative is committed to teaching QA methodologies and programming skills to Native and Indigenous peoples from all walks of life. Apply today!
+                Every journey starts with a single step. TekNative is committed to teaching QA methodologies and programming skills to Native and Indigenous peoples from all walks of life!
                 </h4>
                 <br />
-                <Button
-                  color="danger"
-                  size="lg"
-                  href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FaPlay/>
-                  Watch video
-                </Button>
+
+
+                  <Link activeClass="active" to="home" spy={true} smooth={true} style={{ color: 'white' }}>
+                    <Button size="lg" color="primary">Apply Today!</Button>
+                  </Link>
+
+
               </GridItem>
             </GridContainer>
           </div>
@@ -71,7 +68,9 @@ class LandingPage extends React.Component {
           <div className={classes.container}>
             <ProductSection />
             <TeamSection />
+            <div id="home" >
             <WorkSection />
+        </div>
           </div>
         </div>
         <Footer />

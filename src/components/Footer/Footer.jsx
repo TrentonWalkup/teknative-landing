@@ -24,7 +24,7 @@ function Footer({ ...props }) {
   return (
     <footer className={footerClasses}>
       <div className={classes.container}>
-        <div className={classes.left}>
+        {/* <div className={classes.left}>
           <List className={classes.list}>
             <ListItem className={classes.inlineBlock}>
               <a
@@ -63,18 +63,15 @@ function Footer({ ...props }) {
               </a>
             </ListItem>
           </List>
-        </div>
+        </div> */}
         <div className={classes.right}>
-          &copy; {1900 + new Date().getYear()} , made with{" "}
-          <Favorite className={classes.icon} /> by{" "}
-          <a
+          &copy; {1900 + new Date().getYear()} , TekNative - TekNative is a non-profit organization
+          {/* <a
             href="https://www.creative-tim.com"
             className={aClasses}
             target="_blank"
-          >
-            Creative Tim
-          </a>{" "}
-          for a better web.
+          > */}
+
         </div>
       </div>
     </footer>
