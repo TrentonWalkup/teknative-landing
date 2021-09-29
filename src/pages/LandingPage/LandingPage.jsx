@@ -36,7 +36,7 @@ class LandingPage extends React.Component {
           color="transparent"
           routes={dashboardRoutes}
           brand="TEKNATIVE"
-          // rightLinks={<HeaderLinks />}
+          rightLinks={<HeaderLinks />}
           fixed
           changeColorOnScroll={{
             height: 400,
@@ -44,7 +44,7 @@ class LandingPage extends React.Component {
           }}
           {...rest}
         />
-        <Parallax filter image={require("assets/img/landing-bg.jpg")}>
+        <Parallax filter image={require("assets/img/landing_page.jpeg")}>
           <div className={classes.container}>
             <GridContainer>
               <GridItem xs={12} sm={12} md={6}>
