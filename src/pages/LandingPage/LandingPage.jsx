@@ -4,10 +4,7 @@ import classNames from "classnames";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
 
-// @material-ui/icons
-
 // React icons
-import { FaPlay } from 'react-icons/fa';
 
 // core components
 import Header from "components/Header/Header.jsx";

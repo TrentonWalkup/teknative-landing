@@ -10,7 +10,6 @@ import ListItem from "@material-ui/core/ListItem";
 import Tooltip from "@material-ui/core/Tooltip";
 
 // @material-ui/icons
-import { Apps, CloudDownload } from "@material-ui/icons";
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import GroupIcon from '@material-ui/icons/Group';
 import SchoolIcon from '@material-ui/icons/School';
@@ -22,6 +21,8 @@ import CustomDropdown from "components/CustomDropdown/CustomDropdown.jsx";
 import Button from "components/CustomButtons/Button.jsx";
 
 import headerLinksStyle from "assets/jss/material-kit-react/components/headerLinksStyle.jsx";
+
+import BasicModal from "components/Modals/About_Modal"
 
 function HeaderLinks({ ...props }) {
   const { classes } = props;
@@ -94,23 +95,26 @@ function HeaderLinks({ ...props }) {
           </Button>
         </Tooltip>
       </ListItem>
-      {/* <ListItem className={classes.listItem}>
+
+
+      <ListItem className={classes.listItem}>
         <Tooltip
           id="instagram-tooltip"
           title="Follow us on instagram"
           placement={typeof window !== 'undefined' && window.innerWidth > 959 ? "top" : "left"}
           classes={{ tooltip: classes.tooltip }}
         >
-          <Button
+          <BasicModal
             color="transparent"
             href="https://www.instagram.com/CreativeTimOfficial"
             target="_blank"
             className={classes.navLink}
           >
-            <FaInstagram/>
-          </Button>
+          </BasicModal>
         </Tooltip>
-      </ListItem> */}
+      </ListItem>
+
+
     </List>
   );
 }
