@@ -18,8 +18,14 @@ export default function SimpleAccordion() {
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget.
+            TekNative is a non-profit committed to teaching native and
+            indigenous peoples technical skills to fill talent gaps in the space
+            of Software Engineering and test automation. As the digital age
+            continues a tech boom Native American unemployment hovers around
+            26.3 percent. Through intensive, real-world exercises, support, and
+            mentorship our aim is to build marketable skills that employers are
+            seeking. No matter if you’re unemployed, looking for a higher paying
+            job, or new to coding we are here to help you on your journey!
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -33,8 +39,15 @@ export default function SimpleAccordion() {
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget.
+            TekNative was founded with the vision that everyone deserves a
+            chance to succeed. Many Native Americans don’t have access or
+            support in the realm of STEM education or the awareness of services
+            that do exist. Software Engineering and test automation is a rapidly
+            growing field, with many jobs moving to remote/hybrid remote roles
+            opening the door for potential job seekers from all walks of life.
+            TekNative looks to bridge the gap by teaching Native American
+            candidates the best practices in test automation while providing
+            mentorship in professional services to get candidates hired.
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -48,8 +61,12 @@ export default function SimpleAccordion() {
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget.
+            To be eligible for our programs the candidate MUST:
+            <ul>
+              <li>Be over the age of 18</li>
+              <li>Be a member of a federally recognized tribe</li>
+              <li>Have consistent internet access</li>
+            </ul>
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -63,8 +80,8 @@ export default function SimpleAccordion() {
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget.
+            Currently, we are only running the QA Pathways Program. Check back
+            later for more program details!
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -74,12 +91,13 @@ export default function SimpleAccordion() {
           aria-controls="panel2a-content"
           id="panel2a-header"
         >
-          <Typography>Donors</Typography>
+          <Typography>To Our Donors</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget.
+            To our wonderful donors, thank you so much for making an investment
+            in the future of our candidates and making a real difference in
+            their lives.
           </Typography>
         </AccordionDetails>
       </Accordion>
