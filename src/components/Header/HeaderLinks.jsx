@@ -23,43 +23,43 @@ import Button from "components/CustomButtons/Button.jsx";
 import headerLinksStyle from "assets/jss/material-kit-react/components/headerLinksStyle.jsx";
 
 import BasicModal from "components/Modals/About_Modal"
+import Curriculum_Modal from "components/Modals/Curriculum_Modal"
 
 function HeaderLinks({ ...props }) {
   const { classes } = props;
   return (
     <List className={classes.list}>
       <ListItem className={classes.listItem}>
-        {/* <CustomDropdown
-          noLiPadding
-          buttonText="Components"
-          buttonProps={{
-            className: classes.navLink,
-            color: "transparent"
-          }}
-          buttonIcon={Apps}
-          dropdownList={[
-            <Link to="/" className={classes.dropdownLink}>
-              All components
-            </Link>,
-            <a
-              href="https://creativetimofficial.github.io/material-kit-react/#/documentation"
-              target="_blank"
-              className={classes.dropdownLink}
-            >
-              Documentation
-            </a>
-          ]}
-        /> */}
+        <Tooltip
+          id="instagram-tooltip"
+          title="Follow us on instagram"
+          placement={typeof window !== 'undefined' && window.innerWidth > 959 ? "top" : "left"}
+          classes={{ tooltip: classes.tooltip }}
+        >
+          <BasicModal
+            color="transparent"
+            href="https://www.instagram.com/CreativeTimOfficial"
+            target="_blank"
+            className={classes.navLink}
+          >
+          </BasicModal>
+        </Tooltip>
       </ListItem>
       <ListItem className={classes.listItem}>
-        <Button
-          // href="https://www.creative-tim.com/product/material-kit-react"
-          color="transparent"
-          target="_blank"
-          className={classes.navLink}
+        <Tooltip
+          id="instagram-tooltip"
+          title="Follow us on instagram"
+          placement={typeof window !== 'undefined' && window.innerWidth > 959 ? "top" : "left"}
+          classes={{ tooltip: classes.tooltip }}
         >
-          <GroupIcon className={classes.icons} /> About Us
-        </Button>
+          <Curriculum_Modal
+            color="transparent"
+            href="https://www.instagram.com/CreativeTimOfficial"
+            target="_blank"
+            className={classes.navLink}
+          >
+          </Curriculum_Modal>
+        </Tooltip>
       </ListItem>
       <ListItem className={classes.listItem}>
         <Tooltip
@@ -76,41 +76,6 @@ function HeaderLinks({ ...props }) {
           >
             <FavoriteIcon className={classes.icons} /> Donate
           </Button>
-        </Tooltip>
-      </ListItem>
-      <ListItem className={classes.listItem}>
-        <Tooltip
-          id="instagram-facebook"
-          title="Curriculum"
-          placement={typeof window !== 'undefined' && window.innerWidth > 959 ? "top" : "left"}
-          classes={{ tooltip: classes.tooltip }}
-        >
-          <Button
-            color="transparent"
-            // href="https://www.facebook.com/CreativeTim"
-            target="_blank"
-            className={classes.navLink}
-          >
-            <SchoolIcon className={classes.icons} /> About the Program
-          </Button>
-        </Tooltip>
-      </ListItem>
-
-
-      <ListItem className={classes.listItem}>
-        <Tooltip
-          id="instagram-tooltip"
-          title="Follow us on instagram"
-          placement={typeof window !== 'undefined' && window.innerWidth > 959 ? "top" : "left"}
-          classes={{ tooltip: classes.tooltip }}
-        >
-          <BasicModal
-            color="transparent"
-            href="https://www.instagram.com/CreativeTimOfficial"
-            target="_blank"
-            className={classes.navLink}
-          >
-          </BasicModal>
         </Tooltip>
       </ListItem>
 
